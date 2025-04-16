@@ -9,16 +9,75 @@
       background-color: #e9fbe8;
       font-family: 'Arial', sans-serif;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      height: 100vh;
+      padding: 40px 20px;
     }
+
     h1 {
       font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      max-width: 800px;
+      text-align: center;
+      font-size: 1.2em;
+      line-height: 1.8;
+      color: #333;
+      margin-bottom: 50px;
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      filter: blur(0.5px);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.08);
+      filter: blur(0);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
     }
   </style>
 </head>
 <body>
+
   <h1>💻 Create</h1>
+
+  <div class="intro">
+    386, 486 시절 <strong>페르시안 왕자</strong>와 <strong>고인돌</strong> 게임을 하며 컴퓨터의 매력에 눈을 떴습니다.<br><br>
+    중학생 시절엔 컴활과 워드는 씹어먹었고, 대학 졸업 즈음에는 코딩이 너무 싫어 전혀 다른 삶을 살기도 했죠.<br><br>
+    하지만 역시 <strong>배운 게 도둑질</strong>이라 그런가요? 결국 지금은 코딩을 가르치는 선생님이 되었어요.<br><br>
+    20년 전 밤을 새워 영타로 HTML 태그를 일일이 치며 홈페이지 만들던 시절이 생각나네요.<br><br>
+    지금은 단 하루 만에 이렇게 멋진 웹페이지를 만들 수 있다니, 정말 놀랍고 즐겁습니다.<br><br>
+    <strong>아두이노, 드론, 로봇, 3D펜</strong>까지 자유자재로 활용하며<br>
+    초·중·고 학생부터 성인까지 맞춤형으로 재미있게 코딩을 가르치는<br>
+    감성 넘치는 코딩 교육자 <strong>초코 🍫</strong>입니다. 😊
+  </div>
+
+  <div class="gallery">
+    <img src="1.png" alt="아두이노">
+    <img src="2.png" alt="뚜루뚜루">
+    <img src="3.png" alt="바이로봇 드론">
+    <img src="4.png" alt="3D펜">
+    <img src="5.png" alt="기타 로봇">
+  </div>
+
 </body>
 </html>
